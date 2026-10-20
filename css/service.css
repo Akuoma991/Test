@@ -1,0 +1,452 @@
+@font-face {
+    font-family: outfit;
+    src: url(/fonts/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: playfair;
+    src: url(/fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: italic;
+    src: url(/fonts/Playfair-Italic-VariableFont_opsz\,wdth\,wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/aboutus.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    margin-top: 65px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    background-color: black;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /* margin-top: 20px; */
+    float: left;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: goldenrod;
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: goldenrod;
+    font-family: italic;
+}
+.logo span {
+    font-family: italic;
+} 
+nav .dot {
+    margin-right: 20px;
+    font-weight: 10px;
+    font-family: italic;
+}
+.active{
+    color: goldenrod;
+}
+.begin {
+    text-align: center;
+    padding-top: 120px;
+    background-color: black;
+    height: 70vh;
+}
+.begin h3 {
+    color: goldenrod;
+    margin-bottom: 20px;
+    font-family: playfair;
+    font-size: 1.25rem;
+    background-color: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.begin h1 {
+    color: white;
+    font-family: playfair;
+    font-size: 90px;
+    /* letter-spacing: 5px; */
+    font-weight: 700;
+}
+
+.begin span {
+    color: goldenrod;
+    font-family: italic;
+}
+.femi{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.ikuku{
+    width:340px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+    height: auto;
+}
+.ikuku img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+.ifufe h1{
+    color: white;
+    font-family: italic;
+    font-size: 40px;
+    margin: 10px 0;
+}
+.ifufe p{
+    color: white;
+    font-size: 20px;
+    font-family: playfair;
+    /* margin-bottom: 15px; */
+    margin-right: 15px;
+    width: 1090%;
+}
+/* .one {
+    margin-top: 20px;
+} */
+.icon i{
+    color: goldenrod;
+    font-size: 15px;
+}
+.one{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px ;
+    /* margin-bottom: 10px; */
+}
+.book{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 15px;
+}
+.price span{
+    color: goldenrod;
+    font-size: 20px;
+}
+.cost {
+    margin-bottom: 0;
+}
+
+.me{
+    color: goldenrod;
+    text-decoration: none;
+    font-size: 15px;
+    width: fit-content;
+    border-color: goldenrod;
+    border: 2px solid ;
+    height: fit-content;
+    margin-top: 23px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.another{
+    background-color: black;
+    height:auto;
+    padding-top: 10%;
+}
+.another p{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-family: italic;
+}
+.another span{
+    color: goldenrod;
+}
+
+.Decor{
+    width:90%;
+    margin:auto;
+    margin-top: 50px ;
+}
+.video{
+    display:flex;
+    justify-content:space-between;
+    gap:35px;
+}
+.style{
+    width:33.33%;
+    text-align:center;
+}
+.style img,
+.second img,
+.third img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.style h2,
+.second h2,
+.third h2{
+    font-size:42px;
+    color:white;
+    margin:25px 0 20px;
+    font-weight:500;
+}
+
+.style p,
+.second p,
+.third p{
+    color:white;
+    font-size:21px;
+    line-height:1.8;
+    width:90%;
+    margin:auto;
+    font-family: outfit;
+}
+
+.it{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 15px;
+}
+.pri span{
+    color: goldenrod;
+    font-size: 30px;
+}
+.cos {
+    margin-bottom: 0;
+}
+
+
+.serve{
+    width:100%;
+    background: black;
+    padding:80px 8%;
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    width:100%;
+    max-width:950px;
+    background:rgb(20, 19, 19);
+    padding:60px;
+    border-radius:20px;
+}
+
+.third h2{
+    color:white;
+    font-size:48px;
+    margin-bottom:25px;
+    font-weight:700;
+}
+
+.our p{
+    color:white;
+    font-size:20px;
+    line-height:35px;
+    margin-bottom:40px;
+}
+
+.offer{
+    display:flex;
+    gap:50px;
+    margin-left: 100px;
+    /* flex-wrap:wrap; */
+}
+
+.bank{
+    text-decoration:none;
+    background:goldenrod;
+    color:black;
+    padding:16px 40px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.direct{
+    text-decoration:none;
+    color:white;
+    border:2px solid #555;
+    padding:16px 40px;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.direct:hover{
+    background:goldenrod;
+    color:black;
+    /* border-color:goldenrod; */
+}
+
+@media(max-width:768px){
+
+    .card{
+        padding:35px 25px;
+    }
+
+    .third h2{
+        font-size:34px;
+    }
+
+    .our p{
+        font-size:17px;
+        line-height:30px;
+    }
+
+    .offer{
+        flex-direction:column;
+    }
+
+    .bank,
+    .direct{
+        text-align:center;
+        width:100%;
+    }
+}
+.carbin{
+    width:100%;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 2fr;
+    gap:50px;
+    padding:70px 8%;
+    background:#0b0b0b;
+}
+
+.rev h3{
+    color:goldenrod;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.rev p{
+    color:white;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.best{
+    display:flex;
+    gap:20px;
+    font-size:20px;
+    color:goldenrod;
+}
+
+.Stan,
+.emeka,
+         .Somii{
+    display:flex;
+    flex-direction:column;
+}
+
+.Stan h4,
+.emeka h4,
+.Somii h4{
+    color:goldenrod;
+    margin-bottom:25px;
+    letter-spacing:2px;
+    font-size:15px;
+}
+
+.Stan a,
+.emeka a{
+    text-decoration:none;
+    color:white;
+    margin-bottom:15px;
+}
+
+.Stan a:hover,
+.emeka a:hover{
+    color:goldenrod;
+}
+
+.Somii p{
+    color:white;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.Dede{
+    display:flex;
+    margin-bottom:25px;
+}
+
+.Dede input{
+    flex:1;
+    padding:14px;
+    border:none;
+    outline:none;
+    background:#1f1f1f;
+    color:white;
+    border-radius:8px 0 0 8px;
+}
+
+.Dede button{
+    width:60px;
+    border:none;
+    background:goldenrod;
+    color:black;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:0 8px 8px 0;
+}
+
+.Somii small{
+    color:white;
+}
+
+@media(max-width:900px){
+
+    .carbin{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .best{
+        justify-content:center;
+    }
+
+    .ikuku{
+        flex-direction:column;
+    }
+
+    .aku h2{
+        font-size:30px;
+    }
+}

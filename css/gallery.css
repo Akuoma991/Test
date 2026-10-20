@@ -1,0 +1,335 @@
+@font-face {
+    font-family: outfit;
+    src: url(/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(/fonts/Playfair-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: italic;
+    src: url(/fonts/Playfair-Italic-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+}
+
+body {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    backdrop-filter: blur(15px);
+    text-align: center;
+    /* font-family: outfit; */
+    /* font-weight: 200; */
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    /* margin-top: 20px; */
+    float: left;
+    text-transform: capitalize;
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    color: goldenrod;
+}
+
+nav .line {
+    font-family: outfit;
+    font-weight: 50;
+}
+
+nav .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: goldenrod;
+    font-family: italic;
+}
+
+nav .dot {
+    /* gap: 10px; */
+    margin-right: 20px;
+    /* font-size: 15px; */
+    font-family: italic;
+    font-weight: 10px;
+}
+.begin {
+    text-align: center;
+    padding-top: 120px;
+    background-color: rgb(24, 21, 21);
+    height: 30vh;
+}
+.begin h1 {
+    color: white;
+    font-family: playfair;
+    font-size: 90px;
+    /* letter-spacing: 5px; */
+    font-weight: 700;
+}
+
+.begin span {
+    color: goldenrod;
+    font-family: italic;
+}
+
+.Img{
+    width:100%;
+    /* padding:70px 8%; */
+    background: rgb(24, 21, 21);
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.wed{
+    column-count:4;
+    column-gap:20px;
+}
+
+.first,
+.view,
+.card,
+.pics{
+    width:100%;
+    margin-bottom:20px;
+    /* break-inside:avoid; */
+    /* overflow:hidden; */
+    border-radius:12px;
+}
+
+.first img,
+.view img,
+.card img,
+.pics img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+    transition:.6s;
+    /* cursor:pointer; */
+}
+
+.first img:hover,
+.view img:hover,
+.card img:hover,
+.pics img:hover{
+    transform:scale(1.05);
+}
+
+@media(max-width:992px){
+    .wed{
+        column-count:3;
+    }
+}
+
+@media(max-width:768px){
+    .wed{
+        column-count:2;
+    }
+}
+
+@media(max-width:480px){
+    .wed{
+        column-count:1;
+    }
+}
+
+.Big {
+    width: 100%;
+    background: black;
+    padding: 80px 8% 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    gap: 50px;
+    font-family: playfair;
+}
+
+.foot h2 {
+    color: goldenrod;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: italic;
+}
+
+.foot p {
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.spa {
+    display: flex;
+    gap: 15px;
+}
+
+.spa a {
+    width: 45px;
+    height: 45px;
+    background: #1a1a1a;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: goldenrod;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.spa a:hover {
+    background:goldenrod;
+    color: #111;
+}
+
+.Ike,
+.log,
+.sad {
+    display: flex;
+    flex-direction: column;
+}
+
+.Ike h3,
+.log h3,
+.sad h3 {
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.Ike a,
+.log a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+    transition: .3s;
+}
+
+.Ike a:hover,
+.log a:hover {
+    color: goldenrod;
+}
+
+.sad p {
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.love {
+    display: flex;
+    gap: 10px;
+}
+
+.love input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: #1a1a1a;
+    color: white;
+}
+
+.love button {
+    padding: 15px 25px;
+    background: goldenrod;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* .love button:hover {
+    background: #f0c550;
+} */
+
+.eat {
+    background: #080808;
+    border-top: 1px solid #222;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.eat p {
+    color: white;
+    font-size: 15px;
+}
+
+.tea {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.tea a {
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+
+.tea a:hover {
+    color: goldenrod;
+}
+
+.tea span {
+    color: #555;
+}
+
+@media(max-width:992px) {
+
+    .Big {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .Big {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .spa {
+        justify-content: center;
+    }
+
+    .love {
+        flex-direction: column;
+    }
+
+    .love button {
+        width: 100%;
+    }
+
+    .eat {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+}
